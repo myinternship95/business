@@ -148,7 +148,6 @@ header {
     text-indent:0;
     width:188px;
     height: 80px;
-    /*border:none;*/
     background-color:#fff;
     border-radius: 0;
     float: left;
@@ -317,13 +316,23 @@ header {
 	color: #2a535e;
 	font-family: 'Lato-Black', Arial, sans-serif;
 }
-.tweet-content {
-	border-bottom: 1px solid #8fcbbe;
-	padding: 10px 0;
+
+
+.tweet-content  {
+	position: relative;
 }
-.tweet-content img {
+.twitter-content img {
 	background: url('../img/tweet-bg.png');
 	padding: 6px;
+	position: absolute;
+	top: 70px;
+	left: 2px;
+}
+.twitter-text {
+	margin-left: 27px;
+	border: 1px solid #136956;
+	padding: 10px 20px;
+	border-radius: 10%;
 }
 .tweet-text {}
 .tweet-text p {
@@ -380,37 +389,67 @@ header {
 .text-footer ol {}
 .text-footer ol li{
 	padding-bottom: 15px;
+	padding-left: 22px;
 	text-decoration: none;
 	font-family: 'Lato-Regular', Arial, sans-serif;
 }
-.text-footer img {
+/*.text-footer img {
 	background-image: url('../img/tweet-bg-foot.png');
 	padding: 10px 5px;
 	border-top-left-radius: 20%;
 	border-bottom-left-radius: 20%;
+}*/
+.elem-4 ol li{
+	position: relative;
+}
+.elem-4 ol li:before {
+	content: "\f10c";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+	position: absolute;
+	left: 0;
+	top: 2px;
+	color: #34ab45;
 }
 .img-foot {
 	padding-left: 0;
 	padding-top: 15px;
 }
-.twitter-content {
+/*.twitter-content {
 	border: 1px solid #136956;
 	margin-left: -4px;
 	border-radius: 6%;
 	padding-bottom: 44px;
-}
+}*/
 .twitter-content p {
 	color: #fff;
 	font-family: 'Lato-Italic', Arial, sans-serif;
 }
 .twitter-content p.time {
-	padding-top: 15px;
 	font-family: 'Lato-Bold', Arial, sans-serif;
 	color: #0f4f41;
 } 
 .text-footer form {
 	color: #a29d9d;
 	padding-top: 10px;
+}
+.text-footer form input[type=text],.text-footer form input[type=email], .text-footer form textarea {
+	width: 263px;
+	margin-bottom: 6px;
+}
+.text-footer form textarea {
+	position: relative;
+	margin-bottom: 0;
+}
+.text-footer form input[type=submit] {
+	position: absolute;
+	bottom: 0;
+	right: 15px; 
+}
+.mar-15 {
+	margin-bottom: 15px;
 }
 .social {
 	padding-top: 15px;
@@ -424,6 +463,10 @@ header {
 	background: #fff;
 	color: #a9a9a7;
 	border-radius: 45%;
+}
+.social li a:hover i {
+	color: #2a535e;
+	background: rgba(42,83,84,0.6);
 }
 .social li a.facebook-icon i {
 	padding: 7px 10px;
@@ -464,5 +507,76 @@ header {
 	    border-top: 1px solid #ccc;
 	    border-radius: 0;
 	    margin-top: -8px;
+	}
+	.tweet h3 {
+		font-size: 21px;
+	}
+	.tweet-img {
+		padding: 0;
+	}
+	.side-menu h3 {
+		font-size: 21px;
+	}
+	.text-footer form input[type=text],.text-footer form input[type=email], .text-footer form textarea {
+		width: 213px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.tweet h3 {
+		font-size: 15px;
+	}
+	.tweet-img {
+		padding: 0;
+	}
+	.side-menu h3 {
+		font-size: 15px;
+	}
+	.text-footer form input[type=text],.text-footer form input[type=email], .text-footer form textarea {
+		width: 344px;
+	}
+}
+@media (max-width: 767px) {
+	.navbar-header > button {
+		display: inline-block;
+		float: right;
+		position: relative;
+		text-align: center;
+		padding-top: 38px;
+	}
+	.navbar-header > button > span.icon-bar {
+		width: 15px;
+		height: 2px;
+		background-color: #ccc;
+		display: block;
+	}
+	#navbar {
+		background-color: #fff;
+		float: none;
+	}
+	#navbar > ul > li {
+		padding: 0;
+		/*padding-bottom: 15px;*/
+	}
+	#navbar > ul > li:hover,#navbar > ul > li:active {
+		border: none;
+		padding: 0;
+	}
+	#navbar > ul > li > a{
+		padding-bottom: 15px;
+		text-align: center;
+		background: #ccc;
+	}
+	#navbar > ul > li:hover > a {
+		background: rgba(42,83,84,0.6);
+		color: #2a535e;
+	}
+	.carousel-caption {
+		top: 25%;
+	}
+	.carousel-caption > h1 {
+		font-size: 20px;
+	}
+	.text-footer form input[type=text],.text-footer form input[type=email], .text-footer form textarea {
+		width: 100%;
 	}
 }
