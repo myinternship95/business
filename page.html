@@ -3,14 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Home</title>
+	<title>Page</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/page.css">
 </head>
 <body>
 <div id="wrapper">
@@ -59,9 +62,27 @@
 		</div>
 	</header>
 	<section id="main-content">
+		<div class="top-title">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item">Page</li>
+					<li class="breadcrumb-item">2 Col. Page </li>
+				</ol>
+			</div>
+		</div>
+		<div class="name-title">
+			<div class="container name-title">
+				<h3>2 Column Layout</h3>
+			</div>
+		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+					<div class="top-main-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, itaque placeat nesciunt! Accusantium officiis iste quibusdam, recusandae, nihil repudiandae rerum. Nobis quis corporis nam placeat dolorem sit provident nostrum quasi.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, itaque placeat nesciunt! Accusantium officiis iste quibusdam, recusandae, nihil repudiandae rerum. Nobis quis corporis nam placeat dolorem sit provident nostrum quasi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, itaque placeat nesciunt! Accusantium officiis iste quibusdam, recusandae, nihil repudiandae rerum. Nobis quis corporis nam placeat dolorem sit provident nostrum quasi.</p>
+					</div>
 					<div class="blockquote">
 						<h3>Blockquote</h3>
 						<blockquote>
@@ -135,40 +156,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
-					<div class="tweet">
-						<h3>Recent Tweet</h3>
-						<div class="row tweet-content">
-							<div class="col-lg-3 col-md-3 col-sm-3 tweet-img">
-								<img src="img/icon.png" alt="icon tweet"/>
-							</div>
-							<div class="col-lg-9 col-md-9 col-sm-9 tweet-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p class="date">Fri Sep 21 16:44:44</p>
-							</div>
-						</div>
-						<div class="row tweet-content">
-							<div class="col-lg-3 col-md-3 col-sm-3 tweet-img">
-								<img src="img/icon.png" alt="icon tweet"/>
-							</div>
-							<div class="col-lg-9 col-md-9 col-sm-9 tweet-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p class="date">Fri Sep 21 16:44:44</p>
-							</div>
-						</div>
-						<div class="row tweet-content">
-							<div class="col-lg-3 col-md-3 col-sm-3 tweet-img">
-								<img src="img/icon.png" alt="icon tweet "/>
-							</div>
-							<div class="col-lg-9 col-md-9 col-sm-9 tweet-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p class="date">Fri Sep 21 16:44:44</p>
-							</div>
-						</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+					<div class="blog-catogories">
+						<h3>Blog Catogories</h3>
+						<ul>
+							<li>Design<span class="number">1</span></li>
+							<li>Programing<span class="number">3</span></li>
+							<li>Art<span class="number">5</span></li>
+							<li>Opinion<span class="number">3</span></li>
+							<li>Lifestyle<span class="number">1</span></li>
+						</ul>
 					</div>
-
 					<div class="side-menu">
-					<h3>Side Menu</h3>
+						<h3>Side Menu</h3>
 						<ul>
 							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="page.html">Page</a></li>
@@ -177,6 +177,29 @@
 							<li><a href="portfolio.html">Portfolio</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
+					</div>
+					<div class="tweet">
+						<h3>Recent Tweet</h3>
+						<div class="twitter-content">
+							<div class="twitter-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="time">2 days ago</p>
+							</div>
+							<img src="img/icon.png" alt="tweet logo"/>
+						</div>
+						<div class="twitter-content">
+							<div class="twitter-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="time">2 days ago</p>
+							</div>
+							<img src="img/icon.png" alt="tweet logo"/>
+						</div>
+						<div class="twitter-content">
+							<div class="twitter-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="time">2 days ago</p>
+							<img src="img/icon.png" alt="tweet logo"/>
+						</div>
 					</div>
 				</div>
 			</div>
