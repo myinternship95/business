@@ -130,10 +130,10 @@ header {
 	text-align: center;
 	color: #4d7b87;
 }
-#navbar > ul > li:hover, #navbar > ul > li.active {
+/*#navbar > ul > li:hover, #navbar > ul > li.active {
 	border-top: 10px solid #2a535e;
 	padding-top: 35px;
-}
+}*/
 .menu {
 	position: relative;
 }
