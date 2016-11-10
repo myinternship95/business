@@ -71,6 +71,7 @@
 .text-footer form input[type=text],.text-footer form input[type=email], .text-footer form textarea {
 	width: 263px;
 	margin-bottom: 6px;
+	font-family: 'Lato-Italic', Arial, sans-serif;
 }
 .text-footer form textarea {
 	position: relative;
@@ -80,6 +81,10 @@
 	position: absolute;
 	bottom: 0;
 	right: 15px; 
+	color: #fff;
+	background: #36af47;
+	font-family: 'Lato-Black', Arial, sans-serif;
+	padding: 9px 23px;
 }
 .mar-15 {
 	margin-bottom: 15px;
