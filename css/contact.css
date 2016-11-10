@@ -1,0 +1,35 @@
+#main-content {
+	padding-bottom: 0;
+}
+#google-map {
+	position: relative;
+}
+.form-control1 {
+	position: absolute;
+	top: 0;
+	left: 75px;
+	z-index: 100;
+}
+.bg-form {
+	background: url('../img/contact-form.png') no-repeat;
+	width: 300px;
+}
+.bg-form h5 {
+	margin-top: 60px;
+	color: #fff;
+	font-family: 'Lato-Bold', Arial, sans-serif;
+	font-size: 18px;
+}
+.form-control1 form input, .form-control form textarea {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-control1 form textarea {
+	position: relative;
+	margin-bottom: 0;
+}
+.form-control1 form input[type=submit] {
+	position: absolute;
+	bottom: 0;
+	right: 0px; 
+}

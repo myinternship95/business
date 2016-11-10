@@ -109,7 +109,7 @@ header {
 	font-family: 'Lato-Regular', Arial, sans-serif;
 	color: #7a8f95;
 }
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+.navbar > .container .navbar-brand{
 	margin-left: -30px;
 }
 #navbar {}
@@ -174,4 +174,9 @@ header {
 	text-decoration: none;
 	color: #2a535e;
 	font-family: 'Lato-Regular', Arial, sans-serif;
+}
+@media (max-width: 767px) {
+	.navbar > .container .navbar-brand {
+		margin-left: -15px;
+	}
 }
