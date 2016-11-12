@@ -1,6 +1,3 @@
-jQuery(document).ready(function() {
-
-});
 $(document).on('click', '.panel-heading span.clickable', function(e){
     var $this = $(this);
 	if(!$this.hasClass('panel-collapsed')) {
@@ -12,4 +9,30 @@ $(document).on('click', '.panel-heading span.clickable', function(e){
 		$this.removeClass('panel-collapsed');
 		$this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
 	}
-})
+});
+jQuery(document).ready(function() {
+	var e = $(".portfolio-grid");
+	e.isotope({
+	    itemSelector: ".portfolio-item",
+	    layoutMode: 'fitRows',
+	    animationOptions: {
+	        duration: 750,
+	        easing: "linear",
+	        queue: !1
+	    }
+	}), 
+	$(".portfolio-filter").on("click", ".categories", function() {
+	    var a = $(this).attr("data-filter");
+	    e.isotope({
+	        filter: a
+	    })
+	}), 
+	$(".categories-filter").each(function(a, e) {
+	    var i = $(e);
+	    i.on("click", ".categories", function() {
+	        i.find(".active").removeClass("active"), $(this).addClass("active")
+	    })
+	})
+});
+
+
