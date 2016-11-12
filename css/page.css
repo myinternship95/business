@@ -1,3 +1,9 @@
+header {
+    margin-top: 0;
+}
+#navbar > ul > li:hover, #navbar > ul > li.active {
+    border-top: 10px solid #1f987d;
+}
 .top-title {
 	background: #fff;
 	border-top: 1px solid #a6cdd7;
