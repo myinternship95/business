@@ -160,30 +160,24 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/isotope.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
     <script src="js/main.js"></script>
-    <script>
-        var myCenter=new google.maps.LatLng(16.075647, 108.153662);
-        function initialize()
-        {
-	        var mapProp = {
-				center:myCenter,
-				zoom:15,
-				scrollwheel: false,
-				mapTypeId:google.maps.MapTypeId.ROADMAP
-	        };
+     <script>
+      function initMap() {
+        var uluru = {lat: 16.075647, lng: 108.153662};
+        var map = new google.maps.Map(document.getElementById('googleMap'), {
+          zoom: 12,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo4CxR3Q4RjGL-O5FkFsldFlQhWFyldHA&callback=initMap">
+    </script>
 
-	        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-	        var marker=new google.maps.Marker({
-				position:myCenter,
-			});
-
-	        marker.setMap(map);
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);      
-
-    </script>	
 </body>
 </html>
