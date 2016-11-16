@@ -79,7 +79,7 @@
 }
 .text-footer form input[type=submit] {
 	position: absolute;
-	bottom: 0;
+	bottom: 4px;
 	right: 15px; 
 	color: #fff;
 	background: #36af47;
