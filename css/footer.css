@@ -67,6 +67,7 @@
 .text-footer form {
 	color: #a29d9d;
 	padding-top: 10px;
+	position: relative;
 }
 .text-footer form input[type=text],.text-footer form input[type=email], .text-footer form textarea {
 	width: 263px;
@@ -79,8 +80,8 @@
 }
 .text-footer form input[type=submit] {
 	position: absolute;
-	bottom: 4px;
-	right: 15px; 
+	bottom: 0px;
+	right: 0px; 
 	color: #fff;
 	background: #36af47;
 	font-family: 'Lato-Black', Arial, sans-serif;
